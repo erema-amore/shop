@@ -6,6 +6,7 @@ import Categories from "./components/Categories";
 import ShowFullItem from "./components/ShowFullItem";
 
 
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -65,6 +66,7 @@ class App extends React.Component {
   }
   render () {
   return (
+    
     <div className="wrapper">
       <Header orders={this.state.orders} onDelete={this.deleteOrder} />
       <Categories chooseCategory={this.chooseCategory} />
